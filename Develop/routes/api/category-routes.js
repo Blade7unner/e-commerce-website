@@ -45,7 +45,13 @@ router.get('/:id', (req, res) => {
 
 // POST a new category
 router.post('/', (req, res) => {
-  // expects {category_name: 'Sports'}
+  // Check if category_name is provided and not null
+  if (!req.body.category_name || req.body.category_name.trim() === '') {
+    res.status(400).json({ error: 'Category name cannot be empty' });
+    return;
+  }
+
+  // Create the category
   Category.create({
     category_name: req.body.category_name
   })
@@ -58,8 +64,14 @@ router.post('/', (req, res) => {
 
 // PUT to update a category by its `id` value
 router.put('/:id', (req, res) => {
-  // expects {category_name: 'Sports'}
-  Category.update(req.body, {
+  // Check if category_name is provided and not null
+  if (!req.body.category_name || req.body.category_name.trim() === '') {
+    res.status(400).json({ error: 'Category name cannot be empty' });
+    return;
+  }
+
+  // Update the category
+  Category.update({ category_name: req.body.category_name }, {
     where: {
       id: req.params.id
     }
