@@ -8,8 +8,6 @@ This project is the back end of an e-commerce website, providing a robust API fo
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
