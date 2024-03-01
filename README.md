@@ -1,3 +1,4 @@
+
 # E-Commerce Back End
 
 ## Description
@@ -8,6 +9,7 @@ This project is the back end of an e-commerce website, providing a robust API fo
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Walkthrough Videos](#walkthrough-videos)
 
 ## Installation
 
@@ -15,28 +17,51 @@ This project is the back end of an e-commerce website, providing a robust API fo
 
    ```bash
    git clone https://github.com/yourusername/e-commerce-backend.git
+   ```
 
-Navigate to the project directory: cd e-commerce-backend
+2. **Navigate to the project directory:**
 
-Install dependencies: npm install
+   ```bash
+   cd e-commerce-backend
+   ```
 
-Set up your MySQL database:
+3. **Install dependencies:**
 
-Create a .env file in the root directory.
+   ```bash
+   npm install
+   ```
 
-Add your MySQL username, password, and database name to the .env file: 
+4. **Set up your MySQL database:**
 
-DB_USER=yourusername,
-DB_PASSWORD=yourpassword,
-DB_NAME=ecommerce_db
+   - Create a `.env` file in the root directory.
+   - Add your MySQL username, password, and database name to the `.env` file:
 
-Seed the database: npm run seed
+     ```plaintext
+     DB_USER=yourusername
+     DB_PASSWORD=yourpassword
+     DB_NAME=ecommerce_db
+     ```
 
-Start the server: npm start
+5. **Seed the database:**
 
-Usage
-Test the API routes using a tool like Insomnia.
-Perform CRUD operations on categories, products, and tags.
-Use the provided Sequelize models to interact with the database programmatically.
-Customize and extend the project as needed for your specific e-commerce application.
+   ```bash
+   npm run seed
+   ```
 
+6. **Start the server:**
+
+   ```bash
+   npm start
+   ```
+
+## Usage
+
+- Test the API routes using a tool like Insomnia.
+- Perform CRUD operations on categories, products, and tags.
+- Use the provided Sequelize models to interact with the database programmatically.
+- Customize and extend the project as needed for your specific e-commerce application.
+
+## Walkthrough Videos
+
+- **MySQL Shell Walkthrough Video:** [View Video](https://drive.google.com/file/d/1VTVdrhzwDx1BRr9EuWom2kCt-Mt67fYA/view?usp=sharing)
+- **API Tests Walkthrough Video:** [View Video](https://drive.google.com/file/d/1HnaVaHqKhLgELIYVZosPZHMnGzsNFYRr/view?usp=sharing)
