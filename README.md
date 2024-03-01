@@ -35,7 +35,7 @@ Seed the database: npm run seed
 Start the server: npm start
 
 Usage
-Test the API routes using a tool like Insomnia Core or Postman.
+Test the API routes using a tool like Insomnia.
 Perform CRUD operations on categories, products, and tags.
 Use the provided Sequelize models to interact with the database programmatically.
 Customize and extend the project as needed for your specific e-commerce application.
