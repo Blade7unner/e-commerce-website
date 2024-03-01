@@ -26,8 +26,8 @@ Create a .env file in the root directory.
 
 Add your MySQL username, password, and database name to the .env file: 
 
-DB_USER=yourusername
-DB_PASSWORD=yourpassword
+DB_USER=yourusername,
+DB_PASSWORD=yourpassword,
 DB_NAME=ecommerce_db
 
 Seed the database: npm run seed
